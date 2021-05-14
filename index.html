@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sammy`s Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="top_navbar">
+		<div class="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="top_menu">
+			<div class="logo">Sammy`s Web</div>
+				<ul>
+					<li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="https://liyi85.github.io/CVAndrea2021/"><i class="fab fa-github"></i></a></li>
+				</ul>
+
+		</div>
+	</div>
+	<div class="sidebar">
+		<ul class="tabs">
+			<li><a href="#tab1">
+				<span class="icon">
+					<i class="fas fa-paw"></i>
+				</span>
+				<span class="title">About Us</span>
+			</a></li>
+			<li><a href="#tab2">
+				<span class="icon">
+					<i class="fas fa-images"></i>
+				</span>
+				<span class="title">Pictures</span>
+			</a></li>
+			<li><a href="#tab3">
+				<span class="icon">
+					<i class="fas fa-envelope"></i>
+				</span>
+				<span class="title">Contact Us</span>
+			</a></li>
+			<li><a href="#tab4">
+				<span class="icon">
+					<i class="fas fa-gamepad"></i>
+				</span>
+				<span class="title">Game</span>
+			</a></li>
+		</ul>
+	</div>
+	
+	<div class="maint_container">
+		<div class="item" id="tab1">
+			<h2> About Sammy</h2>
+			<p>A little bit about me</p><br>
+			<div class="resume">
+				<div class="title_resume">
+					<h3>Description</h3>
+					<p>I am a mixed dog but people mistake me for a German shepherd. I am eight years old and I do not have siblings</p><br>
+				</div>
+				<div class="title_resume">
+					<h3>Interest</h3>
+					<p>I love swimming, playing ball and, I really enjoy swimming and playing in the park with my friends</p>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="tab2">
+			<h2> Picture of Sammy's best momments</h2><br>
+			<div id="slider">
+			<figure>
+				<img src="1.jpg">
+				<img src="2.jpg">
+				<img src="3.jpg">
+				<img src="4.jpg">
+				<img src="1.jpg">
+			</figure>
+				
+			</div>
+		</div>
+		<div class="item" id="tab3">
+			<div class="wrapper_contact">
+			 <h2>Contact Us</h2><br>
+			 <div id="error_message">
+			 	
+			 </div>
+
+			 <form action="" id="myform" onsubmit = "return validate();">
+			 	<div class="input_field">
+			 		<input type="text" placeholder="Name" id="name">
+			 	</div>
+			 	<div class="input_field">
+			 		<input type="text" placeholder="Subject" id="subject">
+			 	</div>
+			 	<div class="input_field">
+			 		<input type="text" placeholder="Phone" id="phone">
+			 	</div>
+			 	<div class="input_field">
+			 		<input type="text" placeholder="Email" id="email">
+			 	</div>
+			 	<div class="input_field">
+			 		<textarea id="message" placeholder="Message"></textarea>
+			 	</div>
+			 	<div class="btn">
+			 		<input type="submit">
+			 	</div>
+			 </form>
+			</div>	
+		</div>
+		<div class="item" id="tab4">
+			<h2>Tic - Tac -Toe</h2>
+			<div class="container_tic_tac" id="main">
+            <span id="turn">Play</span>
+            <!-- show X or O on div click -->
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+        <!-- Play Again And Reset All Info -->
+        <button onclick="replay()">Play Again</button>
+		<script type="text/javascript" src="tic.js"></script>		
+		</div>
+	</div>
+	</div>
+</div>
+	
+</body>
+
+</html>
+
